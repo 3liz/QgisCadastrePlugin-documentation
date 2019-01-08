@@ -24,7 +24,7 @@ Une fois les deux fichiers jar mis dans le répertoire schemaspy, on peut lancer
 cd schemaspy/
 
 # Lancer la commande avec les bons paramètres
-./generation_documentation_schemaspy.sh -h localhost -p 5432 -d cadastre -u cadastre -s schema_cadastre -w motdepasse -o "../html"
+./generation_documentation_schemaspy.sh -h localhost -p 5432 -d cadastre -u cadastre -s schema_cadastre -w motdepasse -o "../docs"
 ```
 
 
