@@ -3,6 +3,10 @@
 Ce dépôt permet de stocker une documentation automatique de la base de données créée par le plugin Cadastre pour QGIS.
 L'outil SchemaSpy est utilisé.
 
+## Visualiser la documentation
+
+Vous pouvez consulter la documentation via le lien suivant: https://3liz.github.io/QgisCadastrePlugin-documentation/index.html
+
 ## Remarque sur les contraintes
 
 Il n'existe actuellement aucune contrainte de clés étrangères sur les tables du schéma cadastre. Nous proposerons à l'avenir un script qui permettra de les créer, lorsque les données le permettent (ce qui n'est pas toujours le cas, comme des voies non référencées dans `voie` mais référencées dans `parcelle`).
