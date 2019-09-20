@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>pev - qgis Database</title>
+  <title>pev - cadastre_2019 Database</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../index.html" class="navbar-brand"><b>qgis</b> Database</a>
+          <a href="../index.html" class="navbar-brand"><b>cadastre_2019</b> Database</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -146,6 +146,22 @@
 				   <tr>
 					<td title="pevexoneration.pev&#39;s name implies that it&#39;s a child of pev.pev, but it doesn&#39;t reference that column.">
 						<a href='pevexoneration.html'>pevexoneration</a><span class='relatedKey'>.pev</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="pevexoneration_imposable.pev&#39;s name implies that it&#39;s a child of pev.pev, but it doesn&#39;t reference that column.">
+						<a href='pevexoneration_imposable.html'>pevexoneration_imposable</a><span class='relatedKey'>.pev</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="pevexoneration_imposee.pev&#39;s name implies that it&#39;s a child of pev.pev, but it doesn&#39;t reference that column.">
+						<a href='pevexoneration_imposee.html'>pevexoneration_imposee</a><span class='relatedKey'>.pev</span>
 					</td>
 					<td class="constraint detail">
 						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
@@ -964,7 +980,7 @@
 				</tr>
 								</tbody>
 				</table>
-				<p title='44 columns'>Table contained <span id="recordNumber">689824</span> rows<p/>
+				<p title='44 columns'>Table contained <span id="recordNumber">63989</span> rows<p/>
 			</div>
 		</div>
 		<div class="box box-primary">		
@@ -1030,62 +1046,70 @@
             <div class="tab-content no-padding">            
 				<div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="pev.html" title="pev" alt="" coords="5,5,277,1365">
+<area shape="rect" id="node1" href="pev.html" title="pev" alt="" coords="5,5,272,1365">
 </map>
 
 					<a name='diagram'><img id='oneDegreeImg' src='../diagrams/pev.1degree.png' usemap='#oneDegreeRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
 				</div>
 				<div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="pev.html" title="pev" alt="" coords="257,603,529,1963">
-<area shape="rect" id="node2" href="ccoaff.html" title="ccoaff" alt="" coords="43,865,176,983">
-<area shape="rect" id="node3" href="ccocac.html" title="ccocac" alt="" coords="40,1661,179,1779">
-<area shape="rect" id="node4" href="ccthp.html" title="ccthp" alt="" coords="45,1184,173,1301">
-<area shape="rect" id="node5" href="gnexpl.html" title="gnexpl" alt="" coords="39,1049,179,1167">
-<area shape="rect" id="node6" href="local10.html" title="local10" alt="" coords="5,232,213,848">
-<area shape="rect" id="node7" href="pevdependances.html" title="pevdependances" alt="" coords="583,5,784,211">
-<area shape="rect" id="node8" href="pevexoneration.html" title="pevexoneration" alt="" coords="588,228,779,463">
-<area shape="rect" id="node9" href="pevlissage.html" title="pevlissage" alt="" coords="606,480,761,627">
-<area shape="rect" id="node10" href="pevprincipale.html" title="pevprincipale" alt="" coords="596,644,771,937">
-<area shape="rect" id="node11" href="pevprofessionnelle.html" title="pevprofessionnelle" alt="" coords="573,955,793,1131">
-<area shape="rect" id="node12" href="pevtaxation.html" title="pevtaxation" alt="" coords="601,1148,765,1324">
+<area shape="rect" id="node1" href="pev.html" title="pev" alt="" coords="257,900,524,2260">
+<area shape="rect" id="node2" href="ccoaff.html" title="ccoaff" alt="" coords="43,1163,176,1280">
+<area shape="rect" id="node3" href="ccocac.html" title="ccocac" alt="" coords="40,1959,179,2076">
+<area shape="rect" id="node4" href="ccthp.html" title="ccthp" alt="" coords="45,1481,173,1599">
+<area shape="rect" id="node5" href="gnexpl.html" title="gnexpl" alt="" coords="39,1347,179,1464">
+<area shape="rect" id="node6" href="local10.html" title="local10" alt="" coords="5,500,213,1145">
+<area shape="rect" id="node7" href="pevdependances.html" title="pevdependances" alt="" coords="613,5,814,299">
+<area shape="rect" id="node8" href="pevexoneration.html" title="pevexoneration" alt="" coords="618,316,809,521">
+<area shape="rect" id="node9" href="pevexoneration_imposable.html" title="pevexoneration_imposable" alt="" coords="568,539,859,744">
+<area shape="rect" id="node10" href="pevexoneration_imposee.html" title="pevexoneration_imposee" alt="" coords="577,761,850,967">
+<area shape="rect" id="node11" href="pevlissage.html" title="pevlissage" alt="" coords="636,984,791,1131">
+<area shape="rect" id="node12" href="pevprincipale.html" title="pevprincipale" alt="" coords="626,1148,801,1529">
+<area shape="rect" id="node13" href="pevprofessionnelle.html" title="pevprofessionnelle" alt="" coords="603,1547,823,1723">
+<area shape="rect" id="node14" href="pevtaxation.html" title="pevtaxation" alt="" coords="633,1740,794,1916">
 </map>
 
 					<a name='diagram'><img id='oneimpliedDegreeImg' src='../diagrams/pev.implied1degrees.png' usemap='#oneDegreeRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							
 				</div>
 				<div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="local00.html" title="local00" alt="" coords="495,40,671,128">
-<area shape="rect" id="node2" href="parcelle.html" title="parcelle" alt="" coords="255,76,451,164">
-<area shape="rect" id="node3" href="voie.html" title="voie" alt="" coords="24,5,192,93">
-<area shape="rect" id="node9" href="comptecommunal.html" title="comptecommunal" alt="" coords="5,216,211,304">
-<area shape="rect" id="node14" href="gpdl.html" title="gpdl" alt="" coords="48,111,168,199">
-<area shape="rect" id="node4" href="local10.html" title="local10" alt="" coords="715,165,923,781">
-<area shape="rect" id="node5" href="cbtabt.html" title="cbtabt" alt="" coords="520,1237,645,1325">
-<area shape="rect" id="node6" href="ccoeva.html" title="ccoeva" alt="" coords="518,289,647,377">
-<area shape="rect" id="node7" href="cconlc.html" title="cconlc" alt="" coords="519,605,647,693">
-<area shape="rect" id="node8" href="ccoplc.html" title="ccoplc" alt="" coords="519,500,646,588">
-<area shape="rect" id="node10" href="dnatcg.html" title="dnatcg" alt="" coords="518,1027,647,1115">
-<area shape="rect" id="node11" href="dnatlc.html" title="dnatlc" alt="" coords="521,816,645,904">
-<area shape="rect" id="node12" href="dteloc.html" title="dteloc" alt="" coords="521,395,645,483">
-<area shape="rect" id="node13" href="gimtom.html" title="gimtom" alt="" coords="516,1132,649,1220">
-<area shape="rect" id="node15" href="hlmsem.html" title="hlmsem" alt="" coords="515,921,651,1009">
-<area shape="rect" id="node16" href="top48a.html" title="top48a" alt="" coords="519,711,647,799">
-<area shape="rect" id="node17" href="lotslocaux.html" title="lotslocaux" alt="" coords="1021,129,1185,217">
-<area shape="rect" id="node18" href="pev.html" title="pev" alt="" coords="967,536,1239,1896">
-<area shape="rect" id="node19" href="ccoaff.html" title="ccoaff" alt="" coords="752,799,885,916">
-<area shape="rect" id="node20" href="ccocac.html" title="ccocac" alt="" coords="749,1595,888,1712">
-<area shape="rect" id="node21" href="ccthp.html" title="ccthp" alt="" coords="755,1117,883,1235">
-<area shape="rect" id="node22" href="gnexpl.html" title="gnexpl" alt="" coords="749,983,889,1100">
-<area shape="rect" id="node23" href="pevdependances.html" title="pevdependances" alt="" coords="1292,1767,1493,1972">
-<area shape="rect" id="node24" href="cconad.html" title="cconad" alt="" coords="1037,2124,1169,2212">
-<area shape="rect" id="node25" href="pevexoneration.html" title="pevexoneration" alt="" coords="1297,1515,1488,1749">
-<area shape="rect" id="node26" href="ccolloc.html" title="ccolloc" alt="" coords="1037,1913,1168,2001">
-<area shape="rect" id="node27" href="gnextl.html" title="gnextl" alt="" coords="1039,2019,1167,2107">
-<area shape="rect" id="node28" href="pevlissage.html" title="pevlissage" alt="" coords="1315,316,1470,463">
-<area shape="rect" id="node29" href="pevprincipale.html" title="pevprincipale" alt="" coords="1305,1989,1480,2283">
-<area shape="rect" id="node30" href="pevprofessionnelle.html" title="pevprofessionnelle" alt="" coords="1283,480,1503,656">
-<area shape="rect" id="node31" href="pevtaxation.html" title="pevtaxation" alt="" coords="1311,673,1475,849">
+<area shape="rect" id="node1" href="local00.html" title="local00" alt="" coords="475,64,643,152">
+<area shape="rect" id="node2" href="parcelle.html" title="parcelle" alt="" coords="255,100,431,188">
+<area shape="rect" id="node3" href="voie.html" title="voie" alt="" coords="28,29,188,117">
+<area shape="rect" id="node10" href="comptecommunal.html" title="comptecommunal" alt="" coords="5,240,211,328">
+<area shape="rect" id="node15" href="gpdl.html" title="gpdl" alt="" coords="48,135,168,223">
+<area shape="rect" id="node4" href="local10.html" title="local10" alt="" coords="687,247,895,892">
+<area shape="rect" id="node5" href="cbtabt.html" title="cbtabt" alt="" coords="496,1261,621,1349">
+<area shape="rect" id="node6" href="ccoeva.html" title="ccoeva" alt="" coords="494,313,623,401">
+<area shape="rect" id="node7" href="cconac.html" title="cconac" alt="" coords="491,1367,627,1455">
+<area shape="rect" id="node8" href="cconlc.html" title="cconlc" alt="" coords="495,629,623,717">
+<area shape="rect" id="node9" href="ccoplc.html" title="ccoplc" alt="" coords="495,524,622,612">
+<area shape="rect" id="node11" href="dnatcg.html" title="dnatcg" alt="" coords="494,1051,623,1139">
+<area shape="rect" id="node12" href="dnatlc.html" title="dnatlc" alt="" coords="497,840,621,928">
+<area shape="rect" id="node13" href="dteloc.html" title="dteloc" alt="" coords="497,419,621,507">
+<area shape="rect" id="node14" href="gimtom.html" title="gimtom" alt="" coords="492,1156,625,1244">
+<area shape="rect" id="node16" href="hlmsem.html" title="hlmsem" alt="" coords="491,945,627,1033">
+<area shape="rect" id="node17" href="top48a.html" title="top48a" alt="" coords="495,735,623,823">
+<area shape="rect" id="node18" href="lotslocaux.html" title="lotslocaux" alt="" coords="994,64,1150,152">
+<area shape="rect" id="node19" href="pev.html" title="pev" alt="" coords="939,708,1205,2068">
+<area shape="rect" id="node20" href="ccoaff.html" title="ccoaff" alt="" coords="724,945,857,1063">
+<area shape="rect" id="node21" href="ccocac.html" title="ccocac" alt="" coords="721,1767,860,1884">
+<area shape="rect" id="node22" href="ccthp.html" title="ccthp" alt="" coords="727,1277,855,1395">
+<area shape="rect" id="node23" href="gnexpl.html" title="gnexpl" alt="" coords="721,1143,861,1260">
+<area shape="rect" id="node24" href="pevdependances.html" title="pevdependances" alt="" coords="1294,404,1495,697">
+<area shape="rect" id="node25" href="cconad.html" title="cconad" alt="" coords="1006,169,1138,257">
+<area shape="rect" id="node26" href="detent.html" title="detent" alt="" coords="1009,540,1135,628">
+<area shape="rect" id="node27" href="dmatgm.html" title="dmatgm" alt="" coords="1003,283,1141,371">
+<area shape="rect" id="node28" href="dmatto.html" title="dmatto" alt="" coords="1007,404,1137,492">
+<area shape="rect" id="node29" href="pevexoneration.html" title="pevexoneration" alt="" coords="1299,1655,1490,1860">
+<area shape="rect" id="node30" href="ccolloc.html" title="ccolloc" alt="" coords="1007,2085,1137,2173">
+<area shape="rect" id="node31" href="gnextl.html" title="gnextl" alt="" coords="1004,2191,1140,2279">
+<area shape="rect" id="node32" href="pevexoneration_imposable.html" title="pevexoneration_imposable" alt="" coords="1249,1877,1540,2083">
+<area shape="rect" id="node33" href="pevexoneration_imposee.html" title="pevexoneration_imposee" alt="" coords="1258,2100,1531,2305">
+<area shape="rect" id="node34" href="pevlissage.html" title="pevlissage" alt="" coords="1317,715,1472,861">
+<area shape="rect" id="node35" href="pevprincipale.html" title="pevprincipale" alt="" coords="1307,5,1482,387">
+<area shape="rect" id="node36" href="pevprofessionnelle.html" title="pevprofessionnelle" alt="" coords="1285,879,1505,1055">
+<area shape="rect" id="node37" href="pevtaxation.html" title="pevtaxation" alt="" coords="1314,1072,1475,1248">
 </map>
 
 					<a name='diagram'><img id='twoimpliedDegreeImg' src='../diagrams/pev.implied2degrees.png' usemap='#twoDegreesRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							

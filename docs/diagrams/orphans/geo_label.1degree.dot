@@ -1,4 +1,4 @@
-// dot 2.40 on Linux 4.15.0-43-generic
+// dot 2.40 on Linux 4.15.0-60-generic
 // SchemaSpy rev Unknown
 digraph "geo_label" {
   graph [
@@ -45,7 +45,7 @@ digraph "geo_label" {
       <TR><TD PORT="x_label" COLSPAN="2" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="116" HEIGHT="16">x_label</TD></TR></TABLE></TD><TD PORT="x_label.type" ALIGN="LEFT">numeric[131089]</TD></TR>
       <TR><TD PORT="y_label" COLSPAN="2" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="116" HEIGHT="16">y_label</TD></TR></TABLE></TD><TD PORT="y_label.type" ALIGN="LEFT">numeric[131089]</TD></TR>
       <TR><TD PORT="geom" COLSPAN="2" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="116" HEIGHT="16">geom</TD></TR></TABLE></TD><TD PORT="geom.type" ALIGN="LEFT">geometry[2147483647]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 0</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 789 504 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 0</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">57 425 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
     </TABLE>>
     URL="tables/geo_label.html"
     tooltip="geo_label"

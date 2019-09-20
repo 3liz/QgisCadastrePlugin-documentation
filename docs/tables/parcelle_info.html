@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>parcelle_info - qgis Database</title>
+  <title>parcelle_info - cadastre_2019 Database</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../index.html" class="navbar-brand"><b>qgis</b> Database</a>
+          <a href="../index.html" class="navbar-brand"><b>cadastre_2019</b> Database</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -389,7 +389,7 @@
 				 <td><p>Code de la voie (lien avec voie)</p></td>
 				</tr>
 				<tr>
-				 <td><span id="proprietaire">proprietaire</span></td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="proprietaire">proprietaire</span></td>
 				 <td>text</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -401,6 +401,14 @@
 				 </td>
 				 <td>
 				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="parcelle_info.proprietaire&#39;s name implies that it&#39;s a child of proprietaire.proprietaire, but it doesn&#39;t reference that column.">
+						<a href='proprietaire.html'>proprietaire</a><span class='relatedKey'>.proprietaire</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
 				  </table>					 
 				 </td>
 				 <td><p>Information sur les propriétaires: code DNUPER, nom, et type. Les informations sont séparées par | entre propriétaires.</p></td>
@@ -458,7 +466,7 @@
 				</tr>
 								</tbody>
 				</table>
-				<p title='18 columns'>Table contained <span id="recordNumber">1172044</span> rows<p/>
+				<p title='18 columns'>Table contained <span id="recordNumber">32155</span> rows<p/>
 			</div>
 		</div>
 		<div class="box box-primary">		
@@ -561,43 +569,57 @@
 				</div>
 				<div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="parcelle.html" title="parcelle" alt="" coords="257,112,465,376">
-<area shape="rect" id="node2" href="comptecommunal.html" title="comptecommunal" alt="" coords="5,212,213,329">
-<area shape="rect" id="node3" href="voie.html" title="voie" alt="" coords="25,368,193,691">
+<area shape="rect" id="node1" href="parcelle.html" title="parcelle" alt="" coords="257,37,465,331">
+<area shape="rect" id="node2" href="comptecommunal.html" title="comptecommunal" alt="" coords="5,553,213,671">
+<area shape="rect" id="node3" href="voie.html" title="voie" alt="" coords="29,184,189,536">
 <area shape="rect" id="node4" href="parcelle_info.html" title="parcelle_info" alt="" coords="509,5,880,603">
+<area shape="rect" id="node5" href="proprietaire.html" title="proprietaire" alt="" coords="257,436,465,1023">
 </map>
 
 					<a name='diagram'><img id='oneimpliedDegreeImg' src='../diagrams/parcelle_info.implied1degrees.png' usemap='#oneDegreeRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							
 				</div>
 				<div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="geo_batiment_parcelle.html" title="geo_batiment_parcelle" alt="" coords="834,1724,1073,1812">
-<area shape="rect" id="node2" href="parcelle.html" title="parcelle" alt="" coords="516,1369,724,1633">
-<area shape="rect" id="node10" href="comptecommunal.html" title="comptecommunal" alt="" coords="5,1428,213,1545">
-<area shape="rect" id="node12" href="voie.html" title="voie" alt="" coords="281,133,449,456">
-<area shape="rect" id="node14" href="gpdl.html" title="gpdl" alt="" coords="305,1191,425,1279">
-<area shape="rect" id="node16" href="pdl.html" title="pdl" alt="" coords="281,1797,449,1885">
-<area shape="rect" id="node3" href="geo_borne_parcelle.html" title="geo_borne_parcelle" alt="" coords="844,1056,1063,1144">
-<area shape="rect" id="node4" href="geo_croix_parcelle.html" title="geo_croix_parcelle" alt="" coords="847,1161,1060,1249">
-<area shape="rect" id="node5" href="geo_numvoie_parcelle.html" title="geo_numvoie_parcelle" alt="" coords="835,1267,1072,1355">
-<area shape="rect" id="node6" href="geo_parcelle.html" title="geo_parcelle" alt="" coords="865,1372,1041,1460">
-<area shape="rect" id="node7" href="geo_subdfisc_parcelle.html" title="geo_subdfisc_parcelle" alt="" coords="835,1477,1072,1565">
-<area shape="rect" id="node8" href="geo_symblim_parcelle.html" title="geo_symblim_parcelle" alt="" coords="835,1583,1072,1671">
-<area shape="rect" id="node9" href="geo_unite_fonciere.html" title="geo_unite_fonciere" alt="" coords="257,613,472,701">
-<area shape="rect" id="node11" href="local00.html" title="local00" alt="" coords="865,183,1041,271">
-<area shape="rect" id="node22" href="annul.html" title="annul" alt="" coords="49,321,169,409">
-<area shape="rect" id="node23" href="carvoi.html" title="carvoi" alt="" coords="47,216,171,304">
-<area shape="rect" id="node24" href="indldnbat.html" title="indldnbat" alt="" coords="36,532,183,620">
-<area shape="rect" id="node25" href="natvoiriv.html" title="natvoiriv" alt="" coords="39,5,180,93">
-<area shape="rect" id="node26" href="typcom.html" title="typcom" alt="" coords="43,111,176,199">
-<area shape="rect" id="node27" href="typvoi.html" title="typvoi" alt="" coords="47,427,171,515">
-<area shape="rect" id="node13" href="local10.html" title="local10" alt="" coords="1183,251,1367,339">
-<area shape="rect" id="node15" href="lots.html" title="lots" alt="" coords="865,1829,1041,1917">
-<area shape="rect" id="node17" href="parcelle_info.html" title="parcelle_info" alt="" coords="768,324,1139,921">
-<area shape="rect" id="node18" href="parcellecomposante.html" title="parcellecomposante" alt="" coords="843,1935,1064,2023">
-<area shape="rect" id="node19" href="proprietaire.html" title="proprietaire" alt="" coords="279,1687,451,1775">
-<area shape="rect" id="node20" href="suf.html" title="suf" alt="" coords="859,2040,1047,2128">
-<area shape="rect" id="node21" href="v_geo_parcelle.html" title="v_geo_parcelle" alt="" coords="862,939,1045,1003">
+<area shape="rect" id="node1" href="geo_batiment_parcelle.html" title="geo_batiment_parcelle" alt="" coords="834,397,1073,485">
+<area shape="rect" id="node2" href="parcelle.html" title="parcelle" alt="" coords="516,789,724,1083">
+<area shape="rect" id="node10" href="comptecommunal.html" title="comptecommunal" alt="" coords="5,1201,213,1319">
+<area shape="rect" id="node12" href="voie.html" title="voie" alt="" coords="285,172,445,524">
+<area shape="rect" id="node14" href="gpdl.html" title="gpdl" alt="" coords="305,65,425,153">
+<area shape="rect" id="node16" href="pdl.html" title="pdl" alt="" coords="285,1136,445,1224">
+<area shape="rect" id="node17" href="type_filiation.html" title="type_filiation" alt="" coords="279,968,450,1056">
+<area shape="rect" id="node3" href="geo_borne_parcelle.html" title="geo_borne_parcelle" alt="" coords="844,503,1063,591">
+<area shape="rect" id="node4" href="geo_croix_parcelle.html" title="geo_croix_parcelle" alt="" coords="847,608,1060,696">
+<area shape="rect" id="node5" href="geo_numvoie_parcelle.html" title="geo_numvoie_parcelle" alt="" coords="835,713,1072,801">
+<area shape="rect" id="node6" href="geo_parcelle.html" title="geo_parcelle" alt="" coords="869,819,1038,907">
+<area shape="rect" id="node7" href="geo_subdfisc_parcelle.html" title="geo_subdfisc_parcelle" alt="" coords="835,924,1072,1012">
+<area shape="rect" id="node8" href="geo_symblim_parcelle.html" title="geo_symblim_parcelle" alt="" coords="835,1029,1072,1117">
+<area shape="rect" id="node9" href="geo_unite_fonciere.html" title="geo_unite_fonciere" alt="" coords="257,2508,472,2596">
+<area shape="rect" id="node11" href="local00.html" title="local00" alt="" coords="869,256,1037,344">
+<area shape="rect" id="node34" href="annul.html" title="annul" alt="" coords="49,427,169,515">
+<area shape="rect" id="node35" href="carvoi.html" title="carvoi" alt="" coords="47,321,171,409">
+<area shape="rect" id="node36" href="indldnbat.html" title="indldnbat" alt="" coords="36,637,183,725">
+<area shape="rect" id="node37" href="natvoi.html" title="natvoi" alt="" coords="41,111,177,199">
+<area shape="rect" id="node38" href="natvoiriv.html" title="natvoiriv" alt="" coords="39,5,180,93">
+<area shape="rect" id="node39" href="typcom.html" title="typcom" alt="" coords="43,216,176,304">
+<area shape="rect" id="node40" href="typvoi.html" title="typvoi" alt="" coords="47,532,171,620">
+<area shape="rect" id="node13" href="local10.html" title="local10" alt="" coords="1183,256,1359,344">
+<area shape="rect" id="node15" href="lots.html" title="lots" alt="" coords="869,1135,1037,1223">
+<area shape="rect" id="node18" href="parcelle_info.html" title="parcelle_info" alt="" coords="768,1345,1139,1943">
+<area shape="rect" id="node19" href="proprietaire.html" title="proprietaire" alt="" coords="516,1544,724,2131">
+<area shape="rect" id="node21" href="ccodem.html" title="ccodem" alt="" coords="297,1419,433,1507">
+<area shape="rect" id="node22" href="ccodro.html" title="ccodro" alt="" coords="300,1313,429,1401">
+<area shape="rect" id="node23" href="ccogrm.html" title="ccogrm" alt="" coords="298,1840,431,1928">
+<area shape="rect" id="node24" href="ccoqua.html" title="ccoqua" alt="" coords="299,1629,431,1717">
+<area shape="rect" id="node25" href="dformjur.html" title="dformjur" alt="" coords="294,2367,435,2455">
+<area shape="rect" id="node26" href="dnatpr.html" title="dnatpr" alt="" coords="301,1735,428,1823">
+<area shape="rect" id="node27" href="gtoper.html" title="gtoper" alt="" coords="301,1524,428,1612">
+<area shape="rect" id="node28" href="gtyp3.html" title="gtyp3" alt="" coords="305,1945,425,2033">
+<area shape="rect" id="node29" href="gtyp4.html" title="gtyp4" alt="" coords="305,2051,425,2139">
+<area shape="rect" id="node30" href="gtyp5.html" title="gtyp5" alt="" coords="305,2156,425,2244">
+<area shape="rect" id="node31" href="gtyp6.html" title="gtyp6" alt="" coords="305,2261,425,2349">
+<area shape="rect" id="node20" href="parcellecomposante.html" title="parcellecomposante" alt="" coords="843,1240,1064,1328">
+<area shape="rect" id="node32" href="suf.html" title="suf" alt="" coords="869,1960,1037,2048">
+<area shape="rect" id="node33" href="v_geo_parcelle.html" title="v_geo_parcelle" alt="" coords="862,175,1045,239">
 </map>
 
 					<a name='diagram'><img id='twoimpliedDegreeImg' src='../diagrams/parcelle_info.implied2degrees.png' usemap='#twoDegreesRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							

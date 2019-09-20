@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ccolloc - qgis Database</title>
+  <title>ccolloc - cadastre_2019 Database</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../index.html" class="navbar-brand"><b>qgis</b> Database</a>
+          <a href="../index.html" class="navbar-brand"><b>cadastre_2019</b> Database</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -122,6 +122,22 @@
 				   <tr>
 					<td title="pevexoneration.ccolloc&#39;s name implies that it&#39;s a child of ccolloc.ccolloc, but it doesn&#39;t reference that column.">
 						<a href='pevexoneration.html'>pevexoneration</a><span class='relatedKey'>.ccolloc</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="pevexoneration_imposable.ccolloc&#39;s name implies that it&#39;s a child of ccolloc.ccolloc, but it doesn&#39;t reference that column.">
+						<a href='pevexoneration_imposable.html'>pevexoneration_imposable</a><span class='relatedKey'>.ccolloc</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="pevexoneration_imposee.ccolloc&#39;s name implies that it&#39;s a child of ccolloc.ccolloc, but it doesn&#39;t reference that column.">
+						<a href='pevexoneration_imposee.html'>pevexoneration_imposee</a><span class='relatedKey'>.ccolloc</span>
 					</td>
 					<td class="constraint detail">
 						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
@@ -229,22 +245,26 @@
 				</div>
 				<div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="pevexoneration.html" title="pevexoneration" alt="" coords="315,5,505,240">
-<area shape="rect" id="node2" href="ccolloc.html" title="ccolloc" alt="" coords="5,217,271,345">
-<area shape="rect" id="node3" href="sufexoneration.html" title="sufexoneration" alt="" coords="317,257,503,492">
+<area shape="rect" id="node1" href="pevexoneration.html" title="pevexoneration" alt="" coords="365,5,555,211">
+<area shape="rect" id="node2" href="ccolloc.html" title="ccolloc" alt="" coords="5,396,271,524">
+<area shape="rect" id="node3" href="pevexoneration_imposable.html" title="pevexoneration_imposable" alt="" coords="315,228,605,433">
+<area shape="rect" id="node4" href="pevexoneration_imposee.html" title="pevexoneration_imposee" alt="" coords="323,451,597,656">
+<area shape="rect" id="node5" href="sufexoneration.html" title="sufexoneration" alt="" coords="367,673,553,908">
 </map>
 
 					<a name='diagram'><img id='oneimpliedDegreeImg' src='../diagrams/ccolloc.implied1degrees.png' usemap='#oneDegreeRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							
 				</div>
 				<div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="pevexoneration.html" title="pevexoneration" alt="" coords="315,300,505,535">
-<area shape="rect" id="node2" href="ccolloc.html" title="ccolloc" alt="" coords="5,111,271,239">
-<area shape="rect" id="node3" href="gnextl.html" title="gnextl" alt="" coords="74,467,202,555">
-<area shape="rect" id="node4" href="pev.html" title="pev" alt="" coords="50,361,226,449">
-<area shape="rect" id="node5" href="sufexoneration.html" title="sufexoneration" alt="" coords="317,25,503,260">
-<area shape="rect" id="node6" href="gnexts.html" title="gnexts" alt="" coords="74,256,202,344">
-<area shape="rect" id="node7" href="suf.html" title="suf" alt="" coords="44,5,232,93">
+<area shape="rect" id="node1" href="pevexoneration.html" title="pevexoneration" alt="" coords="365,5,555,211">
+<area shape="rect" id="node2" href="ccolloc.html" title="ccolloc" alt="" coords="5,477,271,605">
+<area shape="rect" id="node3" href="gnextl.html" title="gnextl" alt="" coords="70,343,206,431">
+<area shape="rect" id="node4" href="pev.html" title="pev" alt="" coords="54,237,222,325">
+<area shape="rect" id="node5" href="pevexoneration_imposable.html" title="pevexoneration_imposable" alt="" coords="315,228,605,433">
+<area shape="rect" id="node6" href="pevexoneration_imposee.html" title="pevexoneration_imposee" alt="" coords="323,451,597,656">
+<area shape="rect" id="node7" href="sufexoneration.html" title="sufexoneration" alt="" coords="367,673,553,908">
+<area shape="rect" id="node8" href="gnexts.html" title="gnexts" alt="" coords="74,816,202,904">
+<area shape="rect" id="node9" href="suf.html" title="suf" alt="" coords="54,711,222,799">
 </map>
 
 					<a name='diagram'><img id='twoimpliedDegreeImg' src='../diagrams/ccolloc.implied2degrees.png' usemap='#twoDegreesRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							

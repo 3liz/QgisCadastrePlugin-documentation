@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>pevprincipale - qgis Database</title>
+  <title>pevprincipale - cadastre_2019 Database</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../index.html" class="navbar-brand"><b>qgis</b> Database</a>
+          <a href="../index.html" class="navbar-brand"><b>cadastre_2019</b> Database</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -898,7 +898,7 @@
 				 <td><p>Superficie des pièces -</p></td>
 				</tr>
 				<tr>
-				 <td><span id="dmatgm">dmatgm</span></td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="dmatgm">dmatgm</span></td>
 				 <td>text</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -910,12 +910,20 @@
 				 </td>
 				 <td>
 				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="pevprincipale.dmatgm&#39;s name implies that it&#39;s a child of dmatgm.dmatgm, but it doesn&#39;t reference that column.">
+						<a href='dmatgm.html'>dmatgm</a><span class='relatedKey'>.dmatgm</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
 				  </table>					 
 				 </td>
 				 <td><p>Matériaux des gros murs - 0 indéterminé 1 pierre 2 meulière 3 béton 4 briques 5 aggloméré 6 bois 9 autres</p></td>
 				</tr>
 				<tr>
-				 <td><span id="dmatto">dmatto</span></td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="dmatto">dmatto</span></td>
 				 <td>text</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -927,6 +935,14 @@
 				 </td>
 				 <td>
 				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="pevprincipale.dmatto&#39;s name implies that it&#39;s a child of dmatto.dmatto, but it doesn&#39;t reference that column.">
+						<a href='dmatto.html'>dmatto</a><span class='relatedKey'>.dmatto</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
 				  </table>					 
 				 </td>
 				 <td><p>Matériaux des toitures - 0 indéterminé 1 tuiles 2 ardoises 3 zinc aluminium 4 béton</p></td>
@@ -949,7 +965,7 @@
 				 <td><p>Année d’achèvement -</p></td>
 				</tr>
 				<tr>
-				 <td><span id="detent">detent</span></td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="detent">detent</span></td>
 				 <td>text</td>
 				 <td>2147483647</td>
 				 <td title='nullable'>√</td>
@@ -961,6 +977,14 @@
 				 </td>
 				 <td>
 				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="pevprincipale.detent&#39;s name implies that it&#39;s a child of detent.detent, but it doesn&#39;t reference that column.">
+						<a href='detent.html'>detent</a><span class='relatedKey'>.detent</span>
+					</td>
+					<td class="constraint detail">
+						Implied Constraint <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
 				  </table>					 
 				 </td>
 				 <td><p>état d’entretien - 1 bon 2 assez bon 3 passable 4 médiocre 5 mauvais</p></td>
@@ -1001,7 +1025,7 @@
 				</tr>
 								</tbody>
 				</table>
-				<p title='49 columns'>Table contained <span id="recordNumber">444965</span> rows<p/>
+				<p title='49 columns'>Table contained <span id="recordNumber">38584</span> rows<p/>
 			</div>
 		</div>
 		<div class="box box-primary">		
@@ -1074,28 +1098,36 @@
 				</div>
 				<div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="oneDegreeRelationshipsDiagramImplied" name="oneDegreeRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="pevprincipale.html" title="pevprincipale" alt="" coords="225,5,521,1512">
-<area shape="rect" id="node2" href="cconad.html" title="cconad" alt="" coords="22,448,165,565">
-<area shape="rect" id="node3" href="pev.html" title="pev" alt="" coords="5,137,181,431">
+<area shape="rect" id="node1" href="pevprincipale.html" title="pevprincipale" alt="" coords="217,5,513,1512">
+<area shape="rect" id="node2" href="cconad.html" title="cconad" alt="" coords="18,448,161,565">
+<area shape="rect" id="node3" href="detent.html" title="detent" alt="" coords="20,1433,159,1551">
+<area shape="rect" id="node4" href="dmatgm.html" title="dmatgm" alt="" coords="13,1164,166,1281">
+<area shape="rect" id="node5" href="dmatto.html" title="dmatto" alt="" coords="17,1299,161,1416">
+<area shape="rect" id="node6" href="pev.html" title="pev" alt="" coords="5,137,173,431">
 </map>
 
 					<a name='diagram'><img id='oneimpliedDegreeImg' src='../diagrams/pevprincipale.implied1degrees.png' usemap='#oneDegreeRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							
 				</div>
 				<div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">					
 					<map id="twoDegreesRelationshipsDiagramImplied" name="twoDegreesRelationshipsDiagramImplied">
-<area shape="rect" id="node1" href="pev.html" title="pev" alt="" coords="233,267,409,560">
-<area shape="rect" id="node2" href="ccoaff.html" title="ccoaff" alt="" coords="35,281,159,369">
-<area shape="rect" id="node3" href="ccocac.html" title="ccocac" alt="" coords="33,597,162,685">
-<area shape="rect" id="node4" href="ccthp.html" title="ccthp" alt="" coords="33,492,161,580">
-<area shape="rect" id="node5" href="gnexpl.html" title="gnexpl" alt="" coords="33,387,161,475">
-<area shape="rect" id="node6" href="local10.html" title="local10" alt="" coords="5,176,189,264">
-<area shape="rect" id="node7" href="pevdependances.html" title="pevdependances" alt="" coords="502,427,701,515">
-<area shape="rect" id="node8" href="cconad.html" title="cconad" alt="" coords="250,887,393,1004">
-<area shape="rect" id="node9" href="pevexoneration.html" title="pevexoneration" alt="" coords="507,216,696,304">
-<area shape="rect" id="node10" href="pevlissage.html" title="pevlissage" alt="" coords="524,321,679,409">
-<area shape="rect" id="node11" href="pevprincipale.html" title="pevprincipale" alt="" coords="453,532,749,2039">
-<area shape="rect" id="node12" href="pevprofessionnelle.html" title="pevprofessionnelle" alt="" coords="495,5,708,93">
-<area shape="rect" id="node13" href="pevtaxation.html" title="pevtaxation" alt="" coords="519,111,683,199">
+<area shape="rect" id="node1" href="pev.html" title="pev" alt="" coords="225,372,393,665">
+<area shape="rect" id="node2" href="ccoaff.html" title="ccoaff" alt="" coords="29,387,157,475">
+<area shape="rect" id="node3" href="ccocac.html" title="ccocac" alt="" coords="29,703,158,791">
+<area shape="rect" id="node4" href="ccthp.html" title="ccthp" alt="" coords="29,597,157,685">
+<area shape="rect" id="node5" href="gnexpl.html" title="gnexpl" alt="" coords="29,492,157,580">
+<area shape="rect" id="node6" href="local10.html" title="local10" alt="" coords="5,281,181,369">
+<area shape="rect" id="node7" href="pevdependances.html" title="pevdependances" alt="" coords="486,2161,685,2249">
+<area shape="rect" id="node8" href="cconad.html" title="cconad" alt="" coords="238,1080,381,1197">
+<area shape="rect" id="node9" href="detent.html" title="detent" alt="" coords="240,2164,379,2281">
+<area shape="rect" id="node10" href="dmatgm.html" title="dmatgm" alt="" coords="233,1895,386,2012">
+<area shape="rect" id="node11" href="dmatto.html" title="dmatto" alt="" coords="237,2029,381,2147">
+<area shape="rect" id="node12" href="pevexoneration.html" title="pevexoneration" alt="" coords="491,5,680,93">
+<area shape="rect" id="node13" href="pevexoneration_imposable.html" title="pevexoneration_imposable" alt="" coords="451,111,720,199">
+<area shape="rect" id="node14" href="pevexoneration_imposee.html" title="pevexoneration_imposee" alt="" coords="457,216,713,304">
+<area shape="rect" id="node15" href="pevlissage.html" title="pevlissage" alt="" coords="508,321,663,409">
+<area shape="rect" id="node16" href="pevprincipale.html" title="pevprincipale" alt="" coords="437,637,733,2144">
+<area shape="rect" id="node17" href="pevprofessionnelle.html" title="pevprofessionnelle" alt="" coords="479,427,692,515">
+<area shape="rect" id="node18" href="pevtaxation.html" title="pevtaxation" alt="" coords="505,532,666,620">
 </map>
 
 					<a name='diagram'><img id='twoimpliedDegreeImg' src='../diagrams/pevprincipale.implied2degrees.png' usemap='#twoDegreesRelationshipsDiagramImplied' class='diagram' border='0' alt='' align='left'></a>							

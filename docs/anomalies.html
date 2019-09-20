@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>qgis Database</title>
+  <title>cadastre_2019 Database</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="navbar-brand"><b>qgis</b> Database</a>
+          <a href="index.html" class="navbar-brand"><b>cadastre_2019</b> Database</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -268,6 +268,10 @@
 					 <td><a href='tables/ccoeva.html'>ccoeva</a>.[ccoeva]</td>
 					</tr>				
 									<tr>
+					 <td><a href='tables/local10.html'>local10</a>.[cconac]</td>
+					 <td><a href='tables/cconac.html'>cconac</a>.[cconac]</td>
+					</tr>				
+									<tr>
 					 <td><a href='tables/local10.html'>local10</a>.[cconlc]</td>
 					 <td><a href='tables/cconlc.html'>cconlc</a>.[cconlc]</td>
 					</tr>				
@@ -360,6 +364,10 @@
 					 <td><a href='tables/pdl.html'>pdl</a>.[pdl]</td>
 					</tr>				
 									<tr>
+					 <td><a href='tables/parcelle.html'>parcelle</a>.[type_filiation]</td>
+					 <td><a href='tables/type_filiation.html'>type_filiation</a>.[type_filiation]</td>
+					</tr>				
+									<tr>
 					 <td><a href='tables/parcelle.html'>parcelle</a>.[voie]</td>
 					 <td><a href='tables/voie.html'>voie</a>.[voie]</td>
 					</tr>				
@@ -370,6 +378,10 @@
 									<tr>
 					 <td><a href='tables/parcelle_info.html'>parcelle_info</a>.[geo_parcelle]</td>
 					 <td><a href='tables/parcelle.html'>parcelle</a>.[parcelle]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/parcelle_info.html'>parcelle_info</a>.[proprietaire]</td>
+					 <td><a href='tables/proprietaire.html'>proprietaire</a>.[proprietaire]</td>
 					</tr>				
 									<tr>
 					 <td><a href='tables/parcelle_info.html'>parcelle_info</a>.[voie]</td>
@@ -420,6 +432,18 @@
 					 <td><a href='tables/cconad.html'>cconad</a>.[cconad]</td>
 					</tr>				
 									<tr>
+					 <td><a href='tables/pevdependances.html'>pevdependances</a>.[detent]</td>
+					 <td><a href='tables/detent.html'>detent</a>.[detent]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevdependances.html'>pevdependances</a>.[dmatgm]</td>
+					 <td><a href='tables/dmatgm.html'>dmatgm</a>.[dmatgm]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevdependances.html'>pevdependances</a>.[dmatto]</td>
+					 <td><a href='tables/dmatto.html'>dmatto</a>.[dmatto]</td>
+					</tr>				
+									<tr>
 					 <td><a href='tables/pevdependances.html'>pevdependances</a>.[pev]</td>
 					 <td><a href='tables/pev.html'>pev</a>.[pev]</td>
 					</tr>				
@@ -433,6 +457,30 @@
 					</tr>				
 									<tr>
 					 <td><a href='tables/pevexoneration.html'>pevexoneration</a>.[pev]</td>
+					 <td><a href='tables/pev.html'>pev</a>.[pev]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposable.html'>pevexoneration_imposable</a>.[ccolloc]</td>
+					 <td><a href='tables/ccolloc.html'>ccolloc</a>.[ccolloc]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposable.html'>pevexoneration_imposable</a>.[gnextl]</td>
+					 <td><a href='tables/gnextl.html'>gnextl</a>.[gnextl]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposable.html'>pevexoneration_imposable</a>.[pev]</td>
+					 <td><a href='tables/pev.html'>pev</a>.[pev]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposee.html'>pevexoneration_imposee</a>.[ccolloc]</td>
+					 <td><a href='tables/ccolloc.html'>ccolloc</a>.[ccolloc]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposee.html'>pevexoneration_imposee</a>.[gnextl]</td>
+					 <td><a href='tables/gnextl.html'>gnextl</a>.[gnextl]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposee.html'>pevexoneration_imposee</a>.[pev]</td>
 					 <td><a href='tables/pev.html'>pev</a>.[pev]</td>
 					</tr>				
 									<tr>
@@ -454,6 +502,18 @@
 									<tr>
 					 <td><a href='tables/pevprincipale.html'>pevprincipale</a>.[dep4_cconad]</td>
 					 <td><a href='tables/cconad.html'>cconad</a>.[cconad]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevprincipale.html'>pevprincipale</a>.[detent]</td>
+					 <td><a href='tables/detent.html'>detent</a>.[detent]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevprincipale.html'>pevprincipale</a>.[dmatgm]</td>
+					 <td><a href='tables/dmatgm.html'>dmatgm</a>.[dmatgm]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevprincipale.html'>pevprincipale</a>.[dmatto]</td>
+					 <td><a href='tables/dmatto.html'>dmatto</a>.[dmatto]</td>
 					</tr>				
 									<tr>
 					 <td><a href='tables/pevprincipale.html'>pevprincipale</a>.[pev]</td>
@@ -570,6 +630,10 @@
 									<tr>
 					 <td><a href='tables/voie.html'>voie</a>.[indldnbat]</td>
 					 <td><a href='tables/indldnbat.html'>indldnbat</a>.[indldnbat]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/voie.html'>voie</a>.[natvoi]</td>
+					 <td><a href='tables/natvoi.html'>natvoi</a>.[natvoi]</td>
 					</tr>				
 									<tr>
 					 <td><a href='tables/voie.html'>voie</a>.[natvoiriv]</td>
@@ -710,6 +774,12 @@
 					</tr>				
 									<tr>
 					 <td><a href='tables/pevexoneration.html'>pevexoneration</a></td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposable.html'>pevexoneration_imposable</a></td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/pevexoneration_imposee.html'>pevexoneration_imposee</a></td>
 					</tr>				
 									<tr>
 					 <td><a href='tables/pevlissage.html'>pevlissage</a></td>
